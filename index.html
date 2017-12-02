@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Наташа - С новым годом!">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="С новым годом!">
+    <meta property="og:site_name" content="Портфолио верстальщика">
+    <meta property="article:author" content="Морозов Семён">
+    <title>Наташа - С новым годом!</title>
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/fontello-embedded.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      
+      <div class="main parralax-window" float="0.1" data-parallax="scroll" data-image-src="img/main-bg.jpg">
+      <div class="main-overlay"></div>
+        <div class="wrapper">
+          <div class="main-header">
+            <h1>Наташка,</h1>
+            <div class="main-line"></div>
+            <p>Со всей душой поздровляю тебя <br>
+              С Новым Годом и Рождеством!</p>
+          </div>
+        </div>
+        <a class="main-down" href="#portfolio"><i class="icon-down"></i></a>
+      </div> 
+      
+      <div class="portfolio" id="portfolio">
+       <strong>
+            <p>Я желаю много счастья,
+            Света, мира и добра<br>
+            В этот новогодний праздник<br>
+            Всем, кто верит в чудеса<br></p>
+
+            <p>Много радости, веселья,<br>
+            Танцев и конфет мешок,<br>
+            Дед Мороз с большим подарком<br>
+            Пусть сегодня к вам придет.<br></p>
+
+            <p>Любви, счастья и здоровья<br>
+            Всем желаю в Новый год,<br>
+            Пускай в этот светлый праздник<br>
+            Волшебство в сердцах живет!<br></p>
+            </strong>
+
+
+</p>
+      </div>   
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <strong>Семён Морозов</strong>
+            </div>
+            <div class="col-md-6">
+              <strong>Подпишитесь</strong>
+              <div class="social-links">
+                <a href="https://vk.com/semork"><i class="icon-vk"></i></a>
+                <a href="https://www.instagram.com/simkamorozov/"><i class="icon-instagram"></i></a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <strong>Напишите мне</strong>
+              <a href="https://vk.me/semork" class="offer-btn">Обратная связь</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+      $(function() {
+        var link = $('a[data-toggle="modal"]');
+        link.on('click', function(event) {
+          var work = $(this).attr('data-work');
+          var modal = $('.modal');
+          modal.find('.modal-body').load(work+'.html');
+        });
+      });
+    </script>
+ <script type="text/javascript">
+$(function(){
+        $("a[href^='#']").click(function(){
+                var _href = $(this).attr("href");
+                $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                return false;
+        });
+});
+</script>
+<script type="text/javascript" language="JavaScript" src=js/snow.js></script>
+  </body>
+</html>
